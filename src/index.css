@@ -17,7 +17,7 @@ body {
   width: 90%;
   max-width: 43rem;
   padding: 1rem;
-  border-radius: 12px;
+  border-radius: 4px;
   background-color: white;
   margin: 3rem auto;
 }
@@ -77,6 +77,15 @@ button:hover,
 button:active {
   background-color: #33059e;
   border-color: #33059e;
+}
+
+button:disabled,
+button:disabled:hover,
+button:disabled:active {
+  background-color: #ccc;
+  color: #292929;
+  border-color: #ccc;
+  cursor: not-allowed;
 }
 
 .form-actions {
